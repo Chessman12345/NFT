@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style__discover-project.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#" class="header__logo">
+                        <img class="header__logo-img" src="logo/Logo.svg" alt="">
+                        <p class="header__logo-text">DiveSea</p>
+                    </a>
+                    <div class="header__menu menu">
+                        <div class="menu__icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Discover</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">creators</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Sell</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">stats</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <section class="discover">
+                <div class="container">
+                    <div class="container__inner">
+                        <div class="discover__img">
+                            <img class="discover__image" src="img/img discover-project.svg" alt="">
+                        </div>
+                        <div class="discover__text">
+                            <div class="discover__title">
+                                <p class="discover__text-title">Project Sun-Glass</p>
+                                <p class="discover__text-podtitle">A collection of 10,000 utility-enabled PFPs that
+                                    feature a richly diverse and unique pool of rarity-powered traits. </p>
+                            </div>
+
+                            <div class="discover__user">
+                                <div class="discover__user-profil">
+                                    <div class="discover__user-profil-icon">
+                                        <img class="discover__user-profil-avatar" src="icon/icon discover-project-2.svg"
+                                            alt="">
+                                    </div>
+                                    <div class="discover__user-profil-name">
+                                        <p class="discover__user-profil-name-title">Created by</p>
+                                        <p class="discover__user-profil-name-podtitle">Perperzon</p>
+                                    </div>
+                                </div>
+                                <div class="discover__user-profil">
+                                    <div class="discover__user-profil-img">
+                                        <img class="discover__user-profil-avatar" src="icon/icon discover-project.svg"
+                                            alt="">
+                                    </div>
+                                    <div class="discover__user-profil-name">
+                                        <p class="discover__user-profil-name-title"> Owned by</p>
+                                        <p class="discover__user-profil-name-podtitle">Videz</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="discover__price">
+                                <div class="discover__price-text-inner">
+                                    <div class="discover__price-text">
+                                        <p class="discover__price-title">Current Bid</p>
+                                    </div>
+                                    <div class="discover__text-price">
+                                        <p class="discover__text-price-number">1.75</p>
+                                        <img src="icon/mdi_ethereum.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="discover__price-data">
+                                    <div class="discover__price-data-text">
+                                        <p class="discover__price-data-text-podtitle">End in</p>
+                                        <p class="discover__price-data-text-title">Jun 17, 2024 at 05:08</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="discover__btn">
+                                <a class="discover__btn-transition" href="#">
+                                    <button class="discover__btn-text" onclick="showDialog()">Place Bid</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <dialog id="dialog" class="dialog">
+                        <div class="container__dialog">
+                            <div class="dialog__text">
+                                <div>
+                                    <p class="dialog__text-title">History of Bid</p>
+                                    <p class="dialog__text-data">Oct 14, 2024</p>
+                                </div>
+                                <i class='bx bx-x' onclick="closeDialog()"></i>
+                            </div>
+                            <div class="dialog__card one__child">
+                                <div class="dialog__card-profil">
+                                    <div class="dialog__card-profil-avatar">
+                                        <img class="icon__card" src="icon/icon discover-project-2.svg" alt="">
+                                    </div>
+                                    <div class="dialog__card-profil-text">
+                                        <p class="dialog__card-profil-name">Repo</p>
+                                        <p class="dialog__card-profil-data">May 17, 2024 at 12:08</p>
+                                    </div>
+                                </div>
+                                <div class="dialog__card-text-price">
+                                    <p class="dialog__price">1.75</p>
+                                    <p class="dialog__card-text-title">ETH</p>
+                                </div>
+                            </div>
+                            <div class="dialog__card one__child">
+                                <div class="dialog__card-profil">
+                                    <div class="dialog__card-profil-avatar">
+                                        <img class="icon__card" src="icon/icon discover-project.svg" alt="">
+                                    </div>
+                                    <div class="dialog__card-profil-text">
+                                        <p class="dialog__card-profil-name">Repo</p>
+                                        <p class="dialog__card-profil-data">May 17, 2024 at 12:08</p>
+                                    </div>
+                                </div>
+                                <div class="dialog__card-text-price">
+                                    <p class="dialog__price">1.75</p>
+                                    <p class="dialog__card-text-title">ETH</p>
+                                </div>
+                            </div>
+                            <div class="dialog__card one__child">
+                                <div class="dialog__card-profil">
+                                    <div class="dialog__card-profil-avatar">
+                                        <img class="icon__card" src="icon/icon discover-project-2.svg" alt="">
+                                    </div>
+                                    <div class="dialog__card-profil-text">
+                                        <p class="dialog__card-profil-name">Repo</p>
+                                        <p class="dialog__card-profil-data">May 17, 2024 at 12:08</p>
+                                    </div>
+                                </div>
+                                <div class="dialog__card-text-price">
+                                    <p class="dialog__price">1.75</p>
+                                    <p class="dialog__card-text-title">ETH</p>
+                                </div>
+                            </div>
+                            <div class="dialog__title">Your Bid</div>
+                            <div class="inner__dialog-select">
+                                <div class="dialog__select">
+                                    <select class="dialog__select_inp" name="" id="">
+                                        <option class="dialog__option" value="">ETH</option>
+                                    </select>
+                                </div>
+                                <div class="dialog__input">
+                                    <input class="dialog__input-select" type="text" placeholder="l">
+                                </div>
+                            </div>
+
+                            <div class="dialog__button">
+                                <a href="#">
+                                    <button class="dialog__btn">Submit</button>
+                                </a>
+                            </div>
+                        </div>
+                    </dialog>
+
+                    <div class="discover__cards">
+                        <div class="discover__cards-text">
+                            <p class="discover__cards-title">From Creator</p>
+                        </div>
+                        <div class="row__cards">
+                            <div class="card__inner-explore card__inner-first">
+                                <div class="card-1 card">
+                                    <img class="img__card-explore" src="icon/Mask Group(1).svg" alt="">
+                                </div>
+                                <div class="wrapper-text">
+                                    <div class="text-card">
+                                        <P class="title">Sun-Glass</P>
+                                        <div class="wrapper-title">
+                                            <div class="number">
+                                                <p class="title-2">Current bid</p>
+                                                <div class="wrapper-img-text">
+                                                    <img src="icon/mdi_ethereum.svg" alt="">
+                                                    <p class="text-number">1.75</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__inner-explore card__inner-two">
+                                <div class="card-1 card">
+                                    <img class="img__card-explore" src="icon/Mask Group(2).svg" alt="">
+                                </div>
+                                <div class="wrapper-text">
+                                    <div class="text-card">
+                                        <P class="title">Sun-Glass</P>
+                                        <div class="wrapper-title">
+                                            <div class="number">
+                                                <p class="title-2">Current bid</p>
+                                                <div class="wrapper-img-text">
+                                                    <img src="icon/mdi_ethereum.svg" alt="">
+                                                    <p class="text-number">1.75</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__inner-explore card__inner-explore-3">
+                                <div class="card-1 card">
+                                    <img class="img__card-explore" src="icon/Mask Group.svg" alt="">
+                                </div>
+                                <div class="wrapper-text">
+                                    <div class="text-card">
+                                        <P class="title">Sun-Glass</P>
+                                        <div class="wrapper-title">
+                                            <div class="number">
+                                                <p class="title-2">Current bid</p>
+                                                <div class="wrapper-img-text">
+                                                    <img src="icon/mdi_ethereum.svg" alt="">
+                                                    <p class="text-number">1.75</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__inner-explore card__inner-explore-last ">
+                                <div class="card-1 card">
+                                    <img class="img__card-explore" src="icon/Mask Group(3).svg" alt="">
+                                </div>
+                                <div class="wrapper-text">
+                                    <div class="text-card">
+                                        <P class="title">Sun-Glass</P>
+                                        <div class="wrapper-title">
+                                            <div class="number">
+                                                <p class="title-2">Current bid</p>
+                                                <div class="wrapper-img-text">
+                                                    <img src="icon/mdi_ethereum.svg" alt="">
+                                                    <p class="text-number">1.75</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__content">
+                        <div class="footer__logo">
+                            <img class="footer__logo-img" src="logo/footer__logo.svg" alt="">
+                            <p class="footer__logo-text">DiveSea</p>
+                        </div>
+                        <div class="footer__info">
+                            <ul class="footer__social">
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">Privacy Policy</a>
+                                </li>
+                            </ul>
+                            <ul class="footer__social">
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">Term & Conditions</a>
+                                </li>
+                            </ul>
+                            <ul class="footer__social">
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">About Us</a>
+                                </li>
+                            </ul>
+                            <ul class="footer__social">
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer__copyright">
+                        <div class="footer__copyright-item">
+                            <p class="footer__copyright-link">© 2024 FILON All Rights Reserv</p>
+                        </div>
+                        <div class="footer__copyright-contacts">
+                            <ul class="footer__contacts">
+                                <li class="footer__contacts-item">
+                                    <i class='bx bxl-instagram footer__copyright-icon'></i>
+                                </li>
+
+                                <li class="footer__contacts-item">
+                                    <i class='bx bxl-telegram footer__copyright-icon'></i>
+                                </li>
+
+                                <li class="footer__contacts-item">
+                                    <i class='bx bxl-facebook footer__copyright-icon'></i>
+                                </li>
+
+                                <li class="footer__contacts-item">
+                                    <i class='bx bxl-twitter footer__copyright-icon'></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scrypt.js"></script>
+</body>
+
+</html>
